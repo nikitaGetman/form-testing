@@ -113,9 +113,7 @@ export default {
 
       nameRules: [
         () => !!this.$v.name.required || "Name is required",
-        () =>
-          (this.$v.$dirty && !!this.$v.name.alpha) ||
-          "Name must be alphabetical",
+        () => !!this.$v.name.alpha || "Name must be alphabetical",
       ],
       surnameRules: [
         () => !!this.$v.surname.required || "Surname is required",
