@@ -11,24 +11,29 @@
       <v-row>
         <v-col cols="12" md="6">
           <v-text-field
+            class="sign-up__name"
             v-model="name"
             :rules="nameRules"
             label="First name"
             prepend-icon="mdi-account"
+            data-testid="name-input"
           ></v-text-field>
         </v-col>
 
         <v-col cols="12" md="6">
           <v-text-field
+            class="sign-up__surname"
             v-model="surname"
             :rules="surnameRules"
             label="Last name"
             prepend-icon="mdi-account"
+            data-testid="surname-input"
           ></v-text-field>
         </v-col>
 
         <v-col cols="12" md="6">
           <v-select
+            class="sign-up__country"
             v-model="country"
             :items="countries"
             menu-props="auto"
@@ -40,38 +45,46 @@
         </v-col>
         <v-col cols="12" md="6">
           <v-text-field
+            class="sign-up__age"
             v-model="age"
             :rules="ageRules"
             label="Age"
             prepend-icon="mdi-account"
+            data-testid="age-input"
           ></v-text-field>
         </v-col>
 
         <v-col cols="12">
           <v-text-field
+            class="sign-up__email"
             v-model="email"
             :rules="emailRules"
             label="E-mail"
             prepend-icon="mdi-email"
+            data-testid="email-input"
           ></v-text-field>
         </v-col>
 
         <v-col cols="12" md="6">
           <v-text-field
+            class="sign-up__password"
             v-model="password"
             :rules="passwordRules"
             label="Password"
             prepend-icon="mdi-lock"
             type="password"
+            data-testid="password-input"
           ></v-text-field>
         </v-col>
         <v-col cols="12" md="6">
           <v-text-field
+            class="sign-up__repeat"
             v-model="repeatPassword"
             :rules="repeatPasswordRules"
             label="Repeat password"
             prepend-icon="mdi-lock"
             type="password"
+            data-testid="password-repeat-input"
           ></v-text-field>
         </v-col>
 
